@@ -1,0 +1,36 @@
+---
+title: "DV_TableauProject2"
+output: html_document
+---
+```{r}
+source("../Rprofile.R", echo = FALSE) #load libraries
+```
+```
+SQL Crosstabs
+```
+```{r}
+source("../01 SQL Crosstabs/Crosstab.R", echo = TRUE) #load crosstabs
+tbl_df(dfrank)
+tbl_df(dfmax)
+tbl_df(dfnth)
+tbl_df(dfcume)
+```
+```
+Tableau Crosstabs
+```
+```
+Rank Crosstab shows the ranking of sum of price for each price broken down by type of residence and zipcode
+```
+![](./Rank.png)
+```
+MaxDifference Crosstab shows the max price and the difference between max price and each price broken down by type of residence and zipcode
+```
+![](./MaxDifference.png)
+```
+Nth Crosstab shows the nth value of price for each zipcode broken down by type of residence and zipcode
+```
+![](./Nth.png)
+```
+Cume_dist Crosstab shows the percentage of the each price over max price broken down by type of residence and zipcode
+```
+![](./Cume_dist.png)
